@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Reservations — Verdure Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Ver<span>dure</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-reserve">Reserve</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- SPLIT CONTACT LAYOUT — fills below nav -->
+  <div style="padding-top: 80px;">
+    <div class="contact-layout">
+
+      <!-- LEFT: dark info panel -->
+      <div class="contact-left">
+        <div class="eyebrow" style="color:var(--olive)">We'd Love to See You</div>
+        <h2>Visit Us<br>in London</h2>
+        <p>Whether you're planning a romantic dinner, a celebration, or a business lunch — we'd love to make it memorable.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Address</strong>
+            <span>14 Grove Lane, Camberwell<br>London, SE5 8SY</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <strong>Phone</strong>
+            <span>+44 207 123 4567</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">✉️</div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            <span>hello@verdure.co.uk</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕐</div>
+          <div class="contact-detail-text">
+            <strong>Opening Hours</strong>
+            <span>Mon–Thu: 12pm – 10pm<br>Fri–Sat: 12pm – 11pm<br>Sunday: 12pm – 9pm</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 2.5rem; padding: 1.5rem; background: rgba(124,181,24,0.08); border: 1px solid rgba(124,181,24,0.2); border-radius: var(--r);">
+          <div class="eyebrow" style="color:var(--olive); margin-bottom:0.5rem;">Private Dining</div>
+          <p style="font-size:0.875rem; color:var(--text-lighter); margin-bottom:0.75rem; line-height:1.65;">Planning a private event for 10–40 guests? Our private dining room is available for exclusive hire with a bespoke menu.</p>
+          <a href="mailto:events@verdure.co.uk" style="font-size:0.875rem; font-weight:700; color:var(--olive);">events@verdure.co.uk →</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: form panel -->
+      <div class="contact-right">
+        <h3>Make a Reservation</h3>
+        <p>Fill in the form and we'll confirm your booking within 2 hours.</p>
+
+        <form id="reservationForm" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+44 7700 900000" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <select id="time" required>
+                <option value="" disabled selected>Select a time</option>
+                <option>12:00 pm</option><option>12:30 pm</option>
+                <option>1:00 pm</option><option>1:30 pm</option>
+                <option>2:00 pm</option><option>6:00 pm</option>
+                <option>6:30 pm</option><option>7:00 pm</option>
+                <option>7:30 pm</option><option>8:00 pm</option>
+                <option>8:30 pm</option><option>9:00 pm</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" required>
+                <option value="" disabled selected>Select guests</option>
+                <option>1 guest</option><option>2 guests</option>
+                <option>3 guests</option><option>4 guests</option>
+                <option>5 guests</option><option>6 guests</option>
+                <option>7–10 guests</option>
+                <option>11+ guests (private dining)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="occasion">Occasion</label>
+              <select id="occasion">
+                <option value="" disabled selected>Select occasion</option>
+                <option>Standard Dining</option><option>Birthday</option>
+                <option>Anniversary</option><option>Business Lunch</option>
+                <option>Date Night</option><option>Private Event</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="requests">Special Requests or Dietary Requirements</label>
+            <textarea id="requests" placeholder="Allergies, accessibility needs, or anything that would make your visit perfect…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Confirm Reservation →</button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <span class="si">🌿</span>
+          <h4>Reservation Received!</h4>
+          <p>Thank you! We'll confirm your table within 2 hours. A confirmation will be sent to your email.</p>
+          <a href="menu.html" class="btn btn-dark" style="margin-top:1.5rem; display:inline-flex;">Explore the Menu →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MAP -->
+  <div class="map-wrap">
+    <div style="text-align:center;">
+      <div style="font-size:2.5rem; margin-bottom:0.75rem;">🗺️</div>
+      <p style="font-size:1rem; font-weight:700; color:var(--dark); margin-bottom:0.25rem;">14 Grove Lane, London SE5 8SY</p>
+      <p style="font-size:0.875rem; color:#888;">Nearest station: Denmark Hill (Overground) · 5 min walk</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Ver<span>dure</span></span>
+        <p>Farm-to-fork Mediterranean cuisine in the heart of London. Where every meal is a celebration of the season.</p>
+        <div class="footer-social">
+          <div class="social-btn">𝕏</div><div class="social-btn">in</div>
+          <div class="social-btn">📸</div><div class="social-btn">f</div>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Opening Hours</h4><ul class="footer-hours">
+        <li><strong>Mon – Thu</strong><br>12pm – 10pm</li>
+        <li><strong>Fri – Sat</strong><br>12pm – 11pm</li>
+        <li><strong>Sunday</strong><br>12pm – 9pm</li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul>
+        <li><a href="#">14 Grove Lane, London</a></li>
+        <li><a href="tel:+442071234567">+44 207 123 4567</a></li>
+        <li><a href="mailto:hello@verdure.co.uk">hello@verdure.co.uk</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Verdure Restaurant. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

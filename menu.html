@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Verdure Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Ver<span>dure</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-reserve">Reserve</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="page-hero-v2">
+    <div>
+      <div class="eyebrow" style="color:var(--olive)">Seasonal · Local · Honest</div>
+      <h1>Our <em>Menu</em></h1>
+      <p class="page-hero-sub">Crafted fresh each day from the finest seasonal produce</p>
+    </div>
+  </div>
+
+  <div class="menu-bar">
+    <button class="menu-tab active" onclick="switchTab('starters', this)">Starters</button>
+    <button class="menu-tab" onclick="switchTab('mains', this)">Mains</button>
+    <button class="menu-tab" onclick="switchTab('desserts', this)">Desserts</button>
+    <button class="menu-tab" onclick="switchTab('drinks', this)">Drinks</button>
+    <button class="menu-tab" onclick="switchTab('tasting', this)">Tasting Menu</button>
+  </div>
+
+  <section class="menu-section">
+
+    <!-- STARTERS -->
+    <div class="menu-category active" id="starters">
+      <h2 class="menu-category-title">Starters & Small Plates</h2>
+      <p class="menu-category-sub">Light bites to begin your journey</p>
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=600&q=80" alt="Burrata" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Garden Burrata</h3>
+              <span class="menu-item-price">£14</span>
+            </div>
+            <p class="menu-item-desc">Creamy burrata with heirloom tomatoes, basil oil, toasted pine nuts, and a honey-balsamic drizzle.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten Free</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80" alt="Soup" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Roasted Celeriac Soup</h3>
+              <span class="menu-item-price">£11</span>
+            </div>
+            <p class="menu-item-desc">Velvety roasted celeriac with truffle oil, crème fraîche, and crispy sage. Served with sourdough.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1562802378-063ec186a863?w=600&q=80" alt="Scallops" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Pan-Seared Scallops</h3>
+              <span class="menu-item-price">£19</span>
+            </div>
+            <p class="menu-item-desc">King scallops with cauliflower purée, pancetta crisp, and a lemon-caper butter.</p>
+            <div class="menu-item-tags"><span class="tag gf">Gluten Free</span><span class="tag new">New</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80" alt="Salad" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Verdure House Salad</h3>
+              <span class="menu-item-price">£12</span>
+            </div>
+            <p class="menu-item-desc">Seasonal greens, roasted beets, candied walnuts, goat's cheese, with a sherry vinaigrette.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten Free</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAINS -->
+    <div class="menu-category" id="mains">
+      <h2 class="menu-category-title">Main Courses</h2>
+      <p class="menu-category-sub">Hearty, seasonal centrepieces</p>
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Lamb" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Slow-Braised Lamb Shoulder</h3>
+              <span class="menu-item-price">£32</span>
+            </div>
+            <p class="menu-item-desc">12-hour braised lamb with rosemary jus, pomegranate gremolata, roasted root vegetables, and polenta.</p>
+            <div class="menu-item-tags"><span class="tag gf">Gluten Free</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80" alt="Salmon" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Wild Salmon en Papillote</h3>
+              <span class="menu-item-price">£28</span>
+            </div>
+            <p class="menu-item-desc">Line-caught salmon baked in parchment with fennel, olives, cherry tomatoes, and a white wine broth.</p>
+            <div class="menu-item-tags"><span class="tag gf">Gluten Free</span><span class="tag new">New</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80" alt="Risotto" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Wild Mushroom Risotto</h3>
+              <span class="menu-item-price">£22</span>
+            </div>
+            <p class="menu-item-desc">Carnaroli rice with wild mushrooms, aged Parmigiano, truffle oil, and fresh thyme.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten Free</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Burger" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Verdure Wagyu Burger</h3>
+              <span class="menu-item-price">£26</span>
+            </div>
+            <p class="menu-item-desc">Wagyu beef patty, aged cheddar, truffle aioli, caramelised onions, pickled jalapeño, brioche bun.</p>
+            <div class="menu-item-tags"><span class="tag spicy">Contains Chilli</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-category" id="desserts">
+      <h2 class="menu-category-title">Desserts</h2>
+      <p class="menu-category-sub">The perfect ending</p>
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Panna Cotta" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Olive Oil Panna Cotta</h3>
+              <span class="menu-item-price">£10</span>
+            </div>
+            <p class="menu-item-desc">Silky panna cotta with estate olive oil, honey, lemon zest, and fresh seasonal berries.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegetarian</span><span class="tag gf">Gluten Free</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" alt="Chocolate Tart" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Dark Chocolate Tart</h3>
+              <span class="menu-item-price">£11</span>
+            </div>
+            <p class="menu-item-desc">72% Valrhona ganache in a walnut pastry shell with sea salt caramel and pistachio brittle.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Tiramisu" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Classic Tiramisù</h3>
+              <span class="menu-item-price">£9</span>
+            </div>
+            <p class="menu-item-desc">House recipe tiramisù with espresso-soaked savoiardi, mascarpone cream, and dark cocoa.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1518976024611-28bf4b48222e?w=600&q=80" alt="Cheese Board" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Artisan Cheese Board</h3>
+              <span class="menu-item-price">£18</span>
+            </div>
+            <p class="menu-item-desc">Four British and Continental cheeses with quince jelly, walnuts, grapes, and artisan crackers.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegetarian</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-category" id="drinks">
+      <h2 class="menu-category-title">Drinks</h2>
+      <p class="menu-category-sub">Natural wines, craft cocktails, and thoughtful non-alcoholic options</p>
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?w=600&q=80" alt="Wine" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Sommelier's Red Selection</h3>
+              <span class="menu-item-price">£9 / glass</span>
+            </div>
+            <p class="menu-item-desc">Rotating boutique reds from Tuscany, Rioja, and Provence. Ask your server for today's choices.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegan</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Cocktail" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Verdure Garden Spritz</h3>
+              <span class="menu-item-price">£13</span>
+            </div>
+            <p class="menu-item-desc">Aperol, elderflower, cucumber, fresh basil, prosecco, and sparkling water. Our signature aperitivo.</p>
+            <div class="menu-item-tags"><span class="tag new">Signature</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Negroni" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Smoked Negroni</h3>
+              <span class="menu-item-price">£14</span>
+            </div>
+            <p class="menu-item-desc">Campari, Tanqueray gin, Carpano Antica vermouth, finished tableside with rosemary smoke.</p>
+            <div class="menu-item-tags"><span class="tag new">New</span></div>
+          </div>
+        </div>
+        <div class="menu-item reveal">
+          <img class="menu-item-img" src="https://images.unsplash.com/photo-1497534446932-c925b458314e?w=600&q=80" alt="Mocktail" />
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Herb & Citrus Cooler</h3>
+              <span class="menu-item-price">£7</span>
+            </div>
+            <p class="menu-item-desc">House-made thyme syrup, fresh lemon, ginger beer, mint, and soda. Alcohol-free and refreshing.</p>
+            <div class="menu-item-tags"><span class="tag veg">Vegan</span><span class="tag gf">Alcohol Free</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASTING -->
+    <div class="menu-category" id="tasting">
+      <h2 class="menu-category-title">The Tasting Experience</h2>
+      <p class="menu-category-sub">A seven-course journey through the season — Wed to Sun evenings only</p>
+      <div class="tasting-card reveal">
+        <h3>Seven Course Menu</h3>
+        <p class="sub">Seasonal · Chef's Selection · Min. 2 guests</p>
+        <div class="tasting-price-row">
+          <div>
+            <div class="tasting-price">£85</div>
+            <div class="tasting-price-sub">+ £45 wine pairing available</div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book This Experience →</a>
+        </div>
+        <div class="tasting-course">
+          <span class="course-num">01</span>
+          <div class="course-info"><strong>Amuse-Bouche</strong><span>Chef's daily surprise — a single perfect bite</span></div>
+        </div>
+        <div class="tasting-course">
+          <span class="course-num">02</span>
+          <div class="course-info"><strong>First Course</strong><span>Compressed cucumber, dill emulsion, Exmoor caviar</span></div>
+        </div>
+        <div class="tasting-course">
+          <span class="course-num">03</span>
+          <div class="course-info"><strong>Second Course</strong><span>Lobster bisque, saffron cream, toasted brioche mouillettes</span></div>
+        </div>
+        <div class="tasting-course">
+          <span class="course-num">04</span>
+          <div class="course-info"><strong>Third Course</strong><span>Duck confit, beetroot textures, blackcurrant gastrique</span></div>
+        </div>
+        <div class="tasting-course">
+          <span class="course-num">05</span>
+          <div class="course-info"><strong>Palate Cleanser</strong><span>Lemon verbena sorbet, candied ginger</span></div>
+        </div>
+        <div class="tasting-course">
+          <span class="course-num">06</span>
+          <div class="course-info"><strong>Main Course</strong><span>28-day dry-aged beef fillet, bone marrow butter, heritage carrots, jus gras</span></div>
+        </div>
+        <div class="tasting-course">
+          <span class="course-num">07</span>
+          <div class="course-info"><strong>Dessert</strong><span>Chocolate sphere, salted caramel centre, warm passion fruit coulis</span></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="reveal">
+      <div class="eyebrow">Ready to Dine?</div>
+      <h2>Let's make a<br><em>reservation</em></h2>
+    </div>
+    <div class="cta-right reveal">
+      <p>Secure your table online or give us a call. We'd love to welcome you — whether it's a quick lunch or the full tasting experience.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-dark">Reserve Now →</a>
+        <a href="gallery.html" class="btn btn-outline-dark">View Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Ver<span>dure</span></span>
+        <p>Farm-to-fork Mediterranean cuisine in the heart of London. Where every meal is a celebration of the season.</p>
+        <div class="footer-social">
+          <div class="social-btn">𝕏</div><div class="social-btn">in</div>
+          <div class="social-btn">📸</div><div class="social-btn">f</div>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Opening Hours</h4><ul class="footer-hours">
+        <li><strong>Mon – Thu</strong><br>12pm – 10pm</li>
+        <li><strong>Fri – Sat</strong><br>12pm – 11pm</li>
+        <li><strong>Sunday</strong><br>12pm – 9pm</li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul>
+        <li><a href="#">14 Grove Lane, London</a></li>
+        <li><a href="tel:+442071234567">+44 207 123 4567</a></li>
+        <li><a href="mailto:hello@verdure.co.uk">hello@verdure.co.uk</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Verdure Restaurant. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

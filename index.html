@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verdure — Modern Mediterranean Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Ver<span>dure</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-reserve">Reserve</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-badge">⭐ Michelin Recommended · Est. 2018</div>
+      <h1>Where <em>Nature</em><br>Meets the Table</h1>
+      <p class="hero-desc">Farm-to-fork Mediterranean cuisine crafted with seasonal ingredients, honest flavours, and a warm welcome in every dish.</p>
+      <div class="hero-actions">
+        <a href="menu.html" class="btn btn-primary">Explore Menu →</a>
+        <a href="contact.html" class="btn btn-ghost">Reserve a Table</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num">15+</span>
+          <span class="hero-stat-label">Years of Craft</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">120+</span>
+          <span class="hero-stat-label">Wine Labels</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">4.9★</span>
+          <span class="hero-stat-label">Guest Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img class="hero-img-main" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Fine dining" />
+      <img class="hero-img-sm" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500&q=80" alt="Chef" />
+      <div class="hero-img-card">
+        <span class="card-num">7</span>
+        <span class="card-label">Course Tasting Menu Available</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Farm to Fork</span><span>Seasonal Menu</span><span>Mediterranean Cuisine</span>
+      <span>Est. 2018 London</span><span>Michelin Recommended</span><span>Wine Pairing</span>
+      <span>Private Dining</span><span>Tasting Menu</span><span>Farm to Fork</span>
+      <span>Seasonal Menu</span><span>Mediterranean Cuisine</span><span>Est. 2018 London</span>
+      <span>Michelin Recommended</span><span>Wine Pairing</span><span>Private Dining</span><span>Tasting Menu</span>
+    </div>
+  </div>
+
+  <!-- BENTO -->
+  <section class="bento-section">
+    <div class="bento-header">
+      <div>
+        <div class="eyebrow">Why Verdure</div>
+        <h2>Crafted with intention,<br>served with soul</h2>
+      </div>
+      <a href="menu.html" class="btn btn-ghost">View Full Menu →</a>
+    </div>
+    <div class="bento-grid">
+      <!-- Row 1 -->
+      <div class="bento-card span-7 reveal">
+        <img class="bento-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80" alt="Food" />
+        <div class="bento-body">
+          <div class="eyebrow">Seasonal Kitchen</div>
+          <h3>New menu, every season</h3>
+          <p>We rewrite our menu four times a year, following what the land gives us. No frozen imports, no shortcuts.</p>
+        </div>
+      </div>
+      <div class="bento-card span-5 bento-olive reveal">
+        <div class="eyebrow" style="color:rgba(17,20,9,0.6)">Our Promise</div>
+        <h3>50-mile ingredient sourcing radius</h3>
+        <p>Every ingredient on your plate comes from within 50 miles of our kitchen — we know every farmer by name.</p>
+      </div>
+      <!-- Row 2 -->
+      <div class="bento-card span-3 bento-stat reveal">
+        <span class="big-num">4.9</span>
+        <span class="big-label">Guest Rating on Google</span>
+      </div>
+      <div class="bento-card span-5 reveal">
+        <img class="bento-img" src="https://images.unsplash.com/photo-1562802378-063ec186a863?w=700&q=80" alt="Scallops" />
+        <div class="bento-body">
+          <div class="eyebrow">This Week's Special</div>
+          <h3>Pan-seared King Scallops</h3>
+          <p>Cauliflower purée, pancetta crisp, lemon-caper butter.</p>
+        </div>
+      </div>
+      <div class="bento-card span-4 bento-award reveal">
+        <div class="award-item">
+          <div class="award-dot"></div>
+          <div class="award-text"><strong>Michelin Guide 2024</strong>Recommended restaurant, London</div>
+        </div>
+        <div class="award-item">
+          <div class="award-dot"></div>
+          <div class="award-text"><strong>Time Out London</strong>Best Farm-to-Fork 2023</div>
+        </div>
+        <div class="award-item">
+          <div class="award-dot"></div>
+          <div class="award-text"><strong>Square Meal</strong>Top 100 Restaurants 2024</div>
+        </div>
+      </div>
+      <!-- Row 3 -->
+      <div class="bento-card span-8 reveal">
+        <img class="bento-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&q=80" alt="Dining room" />
+        <div class="bento-body">
+          <div class="eyebrow">The Space</div>
+          <h3>Warm by design, intimate by nature</h3>
+          <p>Our dining room was designed to feel like an extension of the countryside — natural stone, warm oak, and candlelight that flatters everything.</p>
+        </div>
+      </div>
+      <div class="bento-card span-4 bento-stat reveal">
+        <span class="big-num">120+</span>
+        <span class="big-label">Boutique Wine Labels</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section">
+    <div class="about-visual reveal">
+      <img class="about-visual-main" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80" alt="Chef Amara" />
+      <img class="about-visual-float" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Fresh produce" />
+      <div class="about-pill">🌿 Open since 2018</div>
+    </div>
+    <div class="about-content reveal">
+      <div class="eyebrow">Our Story</div>
+      <h2>Food that tells<br><em>a story</em></h2>
+      <p>Born from a love of Mediterranean heritage and the British countryside, Verdure was founded by Chef Amara Solis in 2018 with one belief: that the best food starts long before the kitchen.</p>
+      <p>The name means "greens" in Italian — a nod to our devotion to vegetables, herbs, and the living landscape that inspires every dish we create.</p>
+      <div class="about-tags">
+        <span class="about-tag">🌱 Sustainable</span>
+        <span class="about-tag">🧑‍🌾 Local Farmers</span>
+        <span class="about-tag">🍷 Natural Wines</span>
+        <span class="about-tag">♻️ Zero Waste Kitchen</span>
+      </div>
+      <a href="gallery.html" class="btn btn-dark">View Our Gallery →</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="eyebrow">Guest Reviews</div>
+    <h2>What our guests say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">An extraordinary evening. The braised lamb was the most tender I've ever tasted, and the staff made us feel like family. We'll be back every season.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SW</div>
+          <div>
+            <div class="testimonial-author-name">Sophie W.</div>
+            <div class="testimonial-author-sub">London, UK</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">The tasting menu is a masterpiece. Every dish surprised and delighted. The sommelier's pairings were flawless. Truly world-class dining.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MR</div>
+          <div>
+            <div class="testimonial-author-name">Marco R.</div>
+            <div class="testimonial-author-sub">Milan, Italy</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Perfect for our anniversary. The atmosphere, food, and service — everything impeccable. Already planning our next visit for the autumn menu!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AL</div>
+          <div>
+            <div class="testimonial-author-name">Alice & James L.</div>
+            <div class="testimonial-author-sub">Bath, UK</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="reveal">
+      <div class="eyebrow">Join Us</div>
+      <h2>Ready for an<br><em>unforgettable</em><br>evening?</h2>
+    </div>
+    <div class="cta-right reveal">
+      <p>Tables fill quickly — especially on weekends. Secure your spot and let us take care of everything. From the first course to the last glass.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-dark">Reserve a Table →</a>
+        <a href="menu.html" class="btn btn-outline-dark">Explore the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Ver<span>dure</span></span>
+        <p>Farm-to-fork Mediterranean cuisine in the heart of London. Where every meal is a celebration of the season.</p>
+        <div class="footer-social">
+          <div class="social-btn">𝕏</div>
+          <div class="social-btn">in</div>
+          <div class="social-btn">📸</div>
+          <div class="social-btn">f</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Reservations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul class="footer-hours">
+          <li><strong>Mon – Thu</strong><br>12pm – 10pm</li>
+          <li><strong>Fri – Sat</strong><br>12pm – 11pm</li>
+          <li><strong>Sunday</strong><br>12pm – 9pm</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">14 Grove Lane, London</a></li>
+          <li><a href="tel:+442071234567">+44 207 123 4567</a></li>
+          <li><a href="mailto:hello@verdure.co.uk">hello@verdure.co.uk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Verdure Restaurant. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

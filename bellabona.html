@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella&Bona – Smarter Lunch für dein Team in München & Berlin</title>
+  <meta name="description" content="Jede Woche 30+ frisch zubereitete Gerichte, direkt ins Büro. Steuerfreier Essenszuschuss für Teams in München & Berlin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="bellabona.css" />
+</head>
+<body>
+
+<!-- ==============================
+     1. NAVBAR
+     ============================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <!-- Logo -->
+    <a href="#" class="nav-logo">bella<span>&amp;</span>bona</a>
+
+    <!-- Center Links -->
+    <ul class="nav-links">
+      <li><a href="#menu">Daily Lunch</a></li>
+      <li><a href="#benefits">Business Catering</a></li>
+      <li><a href="#menu">Unser Menü</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="dropdown-toggle">Mehr ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#steps">So funktionierts</a></li>
+          <li><a href="#testimonials">Referenzen</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Über uns</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Right Actions -->
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary">Gratis testen</a>
+      <a href="#" class="btn btn-ghost">Anmelden</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#menu">Daily Lunch</a>
+  <a href="#benefits">Business Catering</a>
+  <a href="#menu">Unser Menü</a>
+  <a href="#steps">So funktionierts</a>
+  <a href="#testimonials">Referenzen</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Kontakt</a>
+  <a href="#">Blog</a>
+  <div class="nav-actions">
+    <a href="#contact" class="btn btn-primary">Gratis testen</a>
+    <a href="#" class="btn btn-ghost">Anmelden</a>
+  </div>
+</nav>
+
+<!-- ==============================
+     2. HERO
+     ============================== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-tag">
+          <div class="tag-dot"></div>
+          🚀 Neues Feature: Live-Tracking
+        </div>
+
+        <h1>
+          Teamspirit stärken &amp; Steuern sparen –<br />
+          mit <em>smartem Lunch</em>
+        </h1>
+
+        <p class="hero-sub">
+          Jede Woche 30+ frisch zubereitete Gerichte, für alle Ernährungsformen geeignet,
+          individuelle Bestellung per App – direkt ins Büro geliefert, null Aufwand.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            Gratis Team-Lunch buchen →
+          </a>
+          <a href="#menu" class="btn btn-outline btn-lg">
+            Menü ansehen
+          </a>
+        </div>
+
+        <!-- App Store Badges -->
+        <div class="store-badges">
+          <a href="#" class="store-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.47C3.58 23.81 4.08 24 4.6 24c.39 0 .8-.1 1.16-.31l9.9-5.69-2.7-2.7-9.78 7.17zm16.6-14.48L5.76.78C5.4.57 5 .47 4.6.47c-.52 0-1.02.19-1.42.53L13.96 12 19.78 9zm1.34 4.64-3.1-1.79-3.07 3.07 3.07 3.07 3.12-1.8c.89-.51.89-1.04-.02-2.55zM4.6 11.53l-1.42.78c-.89.51-.89 1.55 0 2.06l1.42.78 9.36-1.7L4.6 11.53z"/></svg>
+            <div>
+              <span>Jetzt bei</span>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+          <a href="#" class="store-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div>
+              <span>Laden im</span>
+              <strong>App Store</strong>
+            </div>
+          </a>
+        </div>
+
+        <!-- Social Proof -->
+        <div class="social-proof">
+          <p class="proof-text"><span>200+</span> Teams sind schon dabei</p>
+          <div class="company-logos">
+            <span class="company-logo">Holidu</span>
+            <span class="company-logo">Celonis</span>
+            <span class="company-logo">Personio</span>
+            <span class="company-logo">Check24</span>
+            <span class="company-logo">Bits&Pretzels</span>
+            <span class="company-logo">Wayra</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT – Phone Mockup -->
+      <div class="hero-visual">
+        <div style="position:relative;">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80"
+                alt="Bella&Bona App – Frische Gerichte"
+              />
+              <div class="phone-overlay">
+                <div class="phone-card">
+                  <div class="phone-card-title">Heutiges Tagesgericht 🍜</div>
+                  <div class="phone-card-sub">Thai Chicken Bowl – noch 12 verfügbar</div>
+                  <div class="phone-card-rating">★ 98% (322 Bewertungen)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="phone-float">
+            <div class="phone-float-icon">🚀</div>
+            <div class="phone-float-text">
+              <strong>Live-Tracking</strong>
+              <span>Lieferung in 12 Min.</span>
+            </div>
+          </div>
+          <div class="phone-float-2">
+            🎉 7,50 € steuerfrei
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     3. STATS BAR
+     ============================== -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number"><span>9</span>/10</div>
+        <div class="stat-label">Mitarbeitenden-Zufriedenheit</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span>30–40%</span></div>
+        <div class="stat-label">mehr Mitarbeitende im Büro</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span>1,9 Mio</span></div>
+        <div class="stat-label">gelieferte Gerichte in München &amp; Berlin</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     4. MENU CAROUSEL
+     ============================== -->
+<section class="section menu-section" id="menu">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Unser Menü</span>
+      <h2>Jede Woche 30+ Gerichte.<br />Täglich frisch. Für jede Ernährung.</h2>
+      <p>Von High-Protein über vegan bis glutenfrei – für jeden Geschmack ist etwas dabei. Wöchentlich wechselnde Auswahl, von unseren Köchen frisch zubereitet.</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- Card 1 -->
+        <article class="food-card">
+          <img class="food-card-img"
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80"
+            alt="Frischer Salat mit Birnen" loading="lazy" />
+          <div class="food-card-body">
+            <span class="food-tag tag-seasonal">Saisonale Highlights</span>
+            <div class="food-name">Frischer Salat mit Birnen &amp; Walnüssen</div>
+            <div class="food-rating">
+              <span class="rating-pill">★ 94%</span>
+              <span class="rating-count">171 Bewertungen</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="food-card">
+          <img class="food-card-img"
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
+            alt="High-Protein Thunfisch Bowl" loading="lazy" />
+          <div class="food-card-body">
+            <span class="food-tag tag-protein">High-Protein Gerichte</span>
+            <div class="food-name">High-Protein Thunfisch Bowl</div>
+            <div class="food-rating">
+              <span class="rating-pill">★ 98%</span>
+              <span class="rating-count">322 Bewertungen</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="food-card">
+          <img class="food-card-img"
+            src="https://images.unsplash.com/photo-1562802378-063ec186a863?w=400&q=80"
+            alt="Thai Chicken Salat" loading="lazy" />
+          <div class="food-card-body">
+            <span class="food-tag tag-salad">Asiatische Küche</span>
+            <div class="food-name">Thai Chicken Salat</div>
+            <div class="food-rating">
+              <span class="rating-pill">★ 92%</span>
+              <span class="rating-count">186 Bewertungen</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="food-card">
+          <img class="food-card-img"
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80"
+            alt="Bacon Cheeseburger" loading="lazy" />
+          <div class="food-card-body">
+            <span class="food-tag tag-burger">Klassiker</span>
+            <div class="food-name">Bacon Cheeseburger</div>
+            <div class="food-rating">
+              <span class="rating-pill">★ 99%</span>
+              <span class="rating-count">532 Bewertungen</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="food-card">
+          <img class="food-card-img"
+            src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&q=80"
+            alt="Griechischer Salat mit Feta" loading="lazy" />
+          <div class="food-card-body">
+            <span class="food-tag tag-salad">Mediterran</span>
+            <div class="food-name">Griechischer Salat mit Feta</div>
+            <div class="food-rating">
+              <span class="rating-pill">★ 94%</span>
+              <span class="rating-count">202 Bewertungen</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="food-card">
+          <img class="food-card-img"
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
+            alt="Hawaiian Chicken Poke Bowl" loading="lazy" />
+          <div class="food-card-body">
+            <span class="food-tag tag-poke">Poke Bowls</span>
+            <div class="food-name">Hawaiian Chicken Poke Bowl</div>
+            <div class="food-rating">
+              <span class="rating-pill">★ 97%</span>
+              <span class="rating-count">254 Bewertungen</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 (bonus) -->
+        <article class="food-card">
+          <img class="food-card-img"
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80"
+            alt="Vegane Bowl" loading="lazy" />
+          <div class="food-card-body">
+            <span class="food-tag tag-protein">Vegan</span>
+            <div class="food-name">Vegane Quinoa-Bowl mit Avocado</div>
+            <div class="food-rating">
+              <span class="rating-pill">★ 96%</span>
+              <span class="rating-count">148 Bewertungen</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="carousel-footer">
+      <a href="#" class="btn btn-outline">Jetzt Menü herunterladen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     5. BENEFITS
+     ============================== -->
+<section class="section benefits-section" id="benefits">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Warum Bella&Bona</span>
+      <h2>Endlich ein Benefit, der wirklich Kultur,<br />Anwesenheit &amp; ROI verbessert</h2>
+    </div>
+
+    <!-- Top stats -->
+    <div class="benefits-stats">
+      <div class="benefit-stat-card">
+        <div class="benefit-stat-number">30–40%</div>
+        <div class="benefit-stat-label">mehr Leute im Büro</div>
+        <div class="benefit-stat-sub">Weil leckeres Essen allen gefällt</div>
+      </div>
+      <div class="benefit-stat-card">
+        <div class="benefit-stat-number">7,50 €</div>
+        <div class="benefit-stat-label">steuerfrei pro Gericht</div>
+        <div class="benefit-stat-sub">Und ihr zahlt nur, was bestellt wird</div>
+      </div>
+      <div class="benefit-stat-card">
+        <div class="benefit-stat-number">92%</div>
+        <div class="benefit-stat-label">nutzen es täglich</div>
+        <div class="benefit-stat-sub">Endlich ein Benefit, den alle lieben</div>
+      </div>
+    </div>
+
+    <!-- Bottom 2-col -->
+    <div class="benefits-grid">
+      <!-- Left: features -->
+      <div class="benefits-features">
+        <div class="feature-item">
+          <div class="feature-icon">✓</div>
+          <div class="feature-content">
+            <h4>Jede Woche 30+ Gerichte für jede Ernährung</h4>
+            <p>Halal, vegan, glutenfrei – alle satt &amp; happy.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✓</div>
+          <div class="feature-content">
+            <h4>Mitarbeitende bestellen per App. Null Aufwand fürs Unternehmen.</h4>
+            <p>Keine Bons, kein Nachfragen – eine Monatsrechnung.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✓</div>
+          <div class="feature-content">
+            <h4>100 % Mehrweg. Weniger Verpackungsmüll.</h4>
+            <p>Unterstützt ESG-Ziele mit jeder Bestellung.</p>
+          </div>
+        </div>
+
+        <div class="tax-callout">
+          <h4>Frisches Mittagessen für alle – günstiger dank Essenszuschuss</h4>
+          <p>Durch den steuerfreien Sachbezug sparen Unternehmen und Mitarbeitende gleichzeitig. Wir rechnen alles automatisch ab.</p>
+          <a href="#faq" class="btn btn-outline">Steuerersparnis berechnen →</a>
+        </div>
+      </div>
+
+      <!-- Right: Dashboard mockup -->
+      <div>
+        <div class="dashboard-mockup">
+          <div class="dash-header">
+            <span class="dash-logo">bella&amp;bona Dashboard</span>
+            <span class="dash-date">Mai 2026 · KW 22</span>
+          </div>
+          <div class="dash-stat-row">
+            <div class="dash-stat">
+              <div class="dash-stat-num">247</div>
+              <div class="dash-stat-lbl">Bestellungen diese Woche</div>
+            </div>
+            <div class="dash-stat">
+              <div class="dash-stat-num">€1.852</div>
+              <div class="dash-stat-lbl">Essenszuschuss gespart</div>
+            </div>
+          </div>
+          <div class="dash-stat-row">
+            <div class="dash-stat">
+              <div class="dash-stat-num">98%</div>
+              <div class="dash-stat-lbl">Zufriedenheit</div>
+            </div>
+            <div class="dash-stat">
+              <div class="dash-stat-num">43</div>
+              <div class="dash-stat-lbl">aktive Nutzer:innen</div>
+            </div>
+          </div>
+          <div class="dash-chart">
+            <div class="chart-title">Bestellungen pro Wochentag</div>
+            <div class="chart-bars">
+              <div class="chart-bar"></div>
+              <div class="chart-bar"></div>
+              <div class="chart-bar"></div>
+              <div class="chart-bar"></div>
+              <div class="chart-bar"></div>
+              <div class="chart-bar"></div>
+              <div class="chart-bar"></div>
+            </div>
+          </div>
+          <div class="dash-orders">
+            <div class="dash-order">
+              <span class="dash-order-name">Thai Chicken Bowl</span>
+              <span class="dash-order-badge">Pünktlich</span>
+            </div>
+            <div class="dash-order">
+              <span class="dash-order-name">Bacon Cheeseburger</span>
+              <span class="dash-order-badge">Pünktlich</span>
+            </div>
+            <div class="dash-order">
+              <span class="dash-order-name">Griechischer Salat</span>
+              <span class="dash-order-badge">Pünktlich</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     6. THREE STEPS
+     ============================== -->
+<section class="section steps-section" id="steps">
+  <div class="container">
+    <div class="steps-header">
+      <span class="section-tag">So einfach geht's</span>
+      <h2>In 3 easy Schritten vom Test-Lunch zu Happy Teams</h2>
+      <p>Schneller Setup, kein IT-Aufwand, einfach loslegen.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-number">Schritt 01</span>
+        <h3>Lieferintervall &amp; Budget festlegen</h3>
+        <p>Die meisten Unternehmen sind in weniger als einer Woche startklar. Ihr entscheidet, an welchen Tagen geliefert wird und wie viel Zuschuss pro Person gilt.</p>
+        <div class="step-illustration">🗓️</div>
+      </div>
+      <div class="step-card">
+        <span class="step-number">Schritt 02</span>
+        <h3>Lunch läuft automatisch</h3>
+        <p>Team bestellt bis 9:00 Uhr für die Lieferung am selben Tag. Kein Papierkram, keine Sammelbestellungen – alles über die App.</p>
+        <div class="step-illustration">📱</div>
+      </div>
+      <div class="step-card">
+        <span class="step-number">Schritt 03</span>
+        <h3>Zufriedenheit &amp; Nutzung tracken</h3>
+        <p>Das Dashboard zeigt Bestellvolumen, Rechnungsdaten und Mitarbeiterzufriedenheit in Echtzeit. Alles an einem Ort.</p>
+        <div class="step-illustration">📊</div>
+      </div>
+    </div>
+
+    <div class="steps-cta">
+      <a href="#contact" class="btn btn-primary btn-lg">Kostenlosen Test-Lunch buchen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     7. TESTIMONIALS
+     ============================== -->
+<section class="section testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Kundenstimmen</span>
+      <h2>200+ Firmen stärken mit Bella&Bona ihren Teamspirit</h2>
+    </div>
+
+    <div class="testimonial-main">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-quote">
+        "Unser Team sitzt zusammen, isst gut und fühlt sich wirklich gut versorgt.
+        Es ist das Benefit, über das sie am meisten reden."
+      </p>
+      <div class="testimonial-author">
+        <div class="author-avatar">C</div>
+        <div>
+          <div class="author-name">Carolina Zúñiga</div>
+          <div class="author-title">Office Managerin, Holidu</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-bar">
+      <div class="logo-bar-item">Holidu</div>
+      <div class="logo-bar-item">Celonis</div>
+      <div class="logo-bar-item">Personio</div>
+      <div class="logo-bar-item">Check24</div>
+      <div class="logo-bar-item">Flixbus</div>
+      <div class="logo-bar-item">Westwing</div>
+      <div class="logo-bar-item">Zencap</div>
+      <div class="logo-bar-item">Scalable Capital</div>
+      <div class="logo-bar-item">BioNTech</div>
+      <div class="logo-bar-item">N26</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     8. CONTACT / CTA
+     ============================== -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Left -->
+      <div class="contact-left">
+        <span class="section-tag">Kontakt</span>
+        <h2>Noch Fragen?<br />Wir helfen dir gern.</h2>
+        <p>
+          Alle Infos zum Ablauf, zu unseren Angeboten und wie Bella&Bona perfekt
+          zu deinem Team passt – einfach melden, wir antworten schnell.
+        </p>
+        <div class="contact-person">
+          <div class="person-avatar">R</div>
+          <div>
+            <div class="person-name">Richard Mehta</div>
+            <div class="person-email"><a href="mailto:richard@bellabona.com">richard@bellabona.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Email capture card -->
+      <div class="contact-right">
+        <h3>Noch nicht bereit,<br />Office Lunch zu planen?</h3>
+        <p>
+          Hinterlasse deine E-Mail und wir senden dir die wichtigsten Infos,
+          Preise und Menübeispiele direkt für dein Team.
+        </p>
+        <div class="email-input-row">
+          <input type="email" placeholder="deine@email.com" />
+          <button type="button">Infos erhalten</button>
+        </div>
+        <p style="font-size:.72rem;color:rgba(255,255,255,.6);margin-top:10px;">
+          Kein Spam. Jederzeit abmeldbar.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     9. FAQ ACCORDION
+     ============================== -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="faq-header">
+      <span class="section-tag">FAQ</span>
+      <h2>Alles, was du wissen musst</h2>
+      <p>Steuerfreier Essenszuschuss, Mitarbeiterverpflegung &amp; mehr – alle Antworten auf einen Blick.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Was bedeutet steuerfreier Essenszuschuss?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Der steuerfreie Essenszuschuss erlaubt es Arbeitgeber:innen in Deutschland, bis zu 7,50 € pro Arbeitstag und Mitarbeiter:in steuer- und sozialabgabenfrei fürs Mittagessen beizusteuern. Bella&Bona ist vollständig darauf ausgerichtet – kein Extra-Aufwand, maximaler Benefit.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Wie hilft Bella&Bona, den Sachbezugswert optimal zu nutzen?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Bella&Bona automatisiert den steuerfreien Essenszuschuss direkt bei jeder Bestellung. Du zahlst Gerichte nur, wenn bestellt wird – wir kümmern uns um Rechnungen, Payroll-Optimierung und steuerkonforme Abrechnung.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Warum ist Bella&Bona besser als Essensgutscheine für Mitarbeiter?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Essensgutscheine werden oft vergessen, gelten nur in Partner-Restaurants und verursachen viel Admin. Bella&Bona liefert täglich 30+ frische Gerichte, wird von 92% der Belegschaft genutzt und verursacht null Papierkram.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Wie viel Administrationsaufwand ist mit Bella&Bona verbunden?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Nahezu keiner. Mitarbeitende bestellen selbstständig per App. Als Admin bekommst du eine Monatsrechnung und Zugriff auf ein Live-Dashboard – das war's.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Ist Bella&Bona für internationale Teams geeignet?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Ja. Unsere Gerichte haben klare Labels für Allergene, Halal, laktose- und glutenfrei. 40% der Gerichte sind pflanzlich – ideal für vegetarische oder vegane Ernährung.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Kann man Bella&Bona vorab testen?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Klar! Du kannst einen kostenlosen Test-Lunch für bis zu 50 Personen buchen – ohne Verpflichtung. Einfach das Formular oben ausfüllen und wir melden uns innerhalb von 24 Stunden.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Passt Bella&Bona auch für hybride Teams?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Perfekt sogar. Du bestimmst, an welchen Tagen geliefert wird – Firmen berichten von 30–40% höherer Anwesenheit an Lunch-Tagen. Ein natürlicher Anreiz, ins Büro zu kommen.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Wie schnell kann der Daily Lunch Service starten?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Die meisten Unternehmen sind in unter 7 Tagen ready. Wir begleiten dich vom Test-Lunch bis zum reibungslosen Rollout – inklusive Onboarding deines Teams.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     10. SUPPORT BANNER
+     ============================== -->
+<section class="support-banner">
+  <div class="container">
+    <div class="support-inner">
+      <div class="support-content">
+        <div class="support-icon">🍱</div>
+        <h2>Schon Bella&Bona Kunde?</h2>
+        <p>
+          Besuche das Support Center, um Bestellungen zu verwalten, dein Guthaben zu prüfen
+          oder Antworten auf Fragen zu deinem Konto zu finden.
+        </p>
+      </div>
+      <div class="support-action">
+        <span class="support-deco">🎁</span>
+        <a href="#" class="btn btn-outline btn-lg">Zum Support Center →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================
+     11. FOOTER
+     ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <!-- Brand col -->
+      <div>
+        <div class="footer-logo">bella&bona</div>
+        <p class="footer-tagline">
+          Smarter Lunch für Teams in München &amp; Berlin. Täglich frisch, 100 % Mehrweg,
+          vollständig steueroptimiert.
+        </p>
+        <p class="footer-email">Für alle Anfragen: <a href="mailto:questions@bellabona.com">questions@bellabona.com</a></p>
+        <div class="footer-socials" style="margin-top:20px;">
+          <a href="#" class="social-link" aria-label="Google Maps">📍</a>
+          <a href="#" class="social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="App Store">🍎</a>
+          <a href="#" class="social-link" aria-label="Play Store">▶</a>
+        </div>
+      </div>
+
+      <!-- Links col 1 -->
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <a href="#">Impressum</a>
+        <a href="#">AGB für Firmenkunden</a>
+        <a href="#">AGB für Endnutzer</a>
+        <a href="#">Datenschutzbestimmungen</a>
+      </div>
+
+      <!-- Links col 2 -->
+      <div class="footer-col">
+        <h4>Unternehmen</h4>
+        <a href="#">Karriere</a>
+        <a href="#">Über Uns</a>
+        <a href="#">Blog</a>
+        <a href="#">Presse</a>
+      </div>
+
+      <!-- Links col 3 -->
+      <div class="footer-col">
+        <h4>Hilfe</h4>
+        <a href="#">FAQs</a>
+        <a href="#">Support Center</a>
+        <a href="#">Daily Lunch</a>
+        <a href="#">Business Catering</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">Bella&Bona Copyright © 2026. Mit Liebe gemacht. ❤️</span>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <a href="#" style="font-size:.78rem;color:rgba(255,255,255,.4);transition:.2s;">Datenschutz</a>
+        <a href="#" style="font-size:.78rem;color:rgba(255,255,255,.4);transition:.2s;">Impressum</a>
+        <a href="#" style="font-size:.78rem;color:rgba(255,255,255,.4);transition:.2s;">AGB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==============================
+     JAVASCRIPT
+     ============================== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Navbar scroll shadow ---- */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  /* ---- Hamburger / Mobile nav ---- */
+  const hamburger  = document.getElementById('hamburger');
+  const mobileNav  = document.getElementById('mobileNav');
+  let isOpen = false;
+
+  hamburger.addEventListener('click', () => {
+    isOpen = !isOpen;
+    mobileNav.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    // Animate hamburger to X
+    const spans = hamburger.querySelectorAll('span');
+    if (isOpen) {
+      spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+      spans[1].style.opacity   = '0';
+      spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      spans[0].style.transform = '';
+      spans[1].style.opacity   = '';
+      spans[2].style.transform = '';
+    }
+  });
+
+  // Close mobile nav on link click
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      isOpen = false;
+      mobileNav.classList.remove('open');
+      hamburger.querySelectorAll('span').forEach(s => {
+        s.style.transform = '';
+        s.style.opacity   = '';
+      });
+    });
+  });
+
+  /* ---- FAQ Accordion ---- */
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item   = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-icon').textContent = '+';
+      });
+
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.faq-icon').textContent = '+';
+      }
+    });
+  });
+
+  /* ---- Carousel drag-to-scroll ---- */
+  const track = document.getElementById('carouselTrack');
+  if (track) {
+    let isDown = false, startX = 0, scrollLeft = 0;
+
+    track.addEventListener('mousedown', e => {
+      isDown     = true;
+      startX     = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+      track.style.cursor = 'grabbing';
+    });
+    track.addEventListener('mouseleave', () => { isDown = false; track.style.cursor = 'grab'; });
+    track.addEventListener('mouseup',    () => { isDown = false; track.style.cursor = 'grab'; });
+    track.addEventListener('mousemove',  e => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x    = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      track.scrollLeft = scrollLeft - walk;
+    });
+  }
+
+  /* ---- Smooth scroll for anchor links ---- */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  /* ---- Email capture button feedback ---- */
+  const emailRow = document.querySelector('.email-input-row');
+  if (emailRow) {
+    const btn   = emailRow.querySelector('button');
+    const input = emailRow.querySelector('input');
+    btn.addEventListener('click', () => {
+      const val = input.value.trim();
+      if (!val || !val.includes('@')) {
+        input.style.boxShadow = '0 0 0 3px rgba(232,85,62,.5)';
+        input.focus();
+        setTimeout(() => input.style.boxShadow = '', 1500);
+        return;
+      }
+      btn.textContent  = '✓ Gesendet!';
+      btn.style.background = '#22c55e';
+      input.value      = '';
+      setTimeout(() => {
+        btn.textContent  = 'Infos erhalten';
+        btn.style.background = '';
+      }, 3000);
+    });
+  }
+
+})();
+</script>
+
+</body>
+</html>
